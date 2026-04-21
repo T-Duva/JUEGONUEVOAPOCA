@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene
+    depth="1"
+    desc=""
+    eventsnippetid="2"
+    extheight="800"
+    extwidth="1344"
+    extx="-32"
+    exty="-32"
+    format="4.0.1"
+    gravx="-0.0"
+    gravy="0.0"
+    height="736"
+    id="1"
+    name="L1"
+    revision=""
+    savecount="0"
+    tiled="1"
+    tileh="32"
+    tilew="32"
+    type="standard"
+    width="1280">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <background
+            blendMode="normal"
+            customScrollFactor="false"
+            id="2"
+            locked="true"
+            name="1"
+            opacity="100"
+            order="1"
+            rid="2"
+            scrollFactorX="1.0"
+            scrollFactorY="1.0"
+            visible="true"/>
+        <layer
+            blendMode="normal"
+            color="100,168,234"
+            id="0"
+            locked="false"
+            name="Layer 0"
+            opacity="100"
+            order="0"
+            scrollFactorX="1.0"
+            scrollFactorY="1.0"
+            visible="true"/>
+    </layers>
+    <joints/>
+    <regions>
+        <region
+            b="64"
+            g="64"
+            h="46"
+            id="0"
+            name="Region 1"
+            pts="4,0.0,0.0,96.0,0.0,96.0,46.0,0.0,46.0"
+            r="64"
+            type="box"
+            w="96"
+            x="836"
+            y="211"/>
+        <region
+            b="64"
+            g="160"
+            h="80"
+            id="1"
+            name="Region_NPC"
+            pts="4,0.0,0.0,80.0,0.0,80.0,80.0,0.0,80.0"
+            r="160"
+            type="box"
+            w="80"
+            x="670"
+            y="560"/>
+        <region
+            b="64"
+            g="80"
+            h="90"
+            id="2"
+            name="Region_Portal"
+            pts="4,0.0,0.0,90.0,0.0,90.0,90.0,0.0,90.0"
+            r="80"
+            type="box"
+            w="90"
+            x="750"
+            y="555"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor
+            a="0.0"
+            aid="0"
+            c="false"
+            group="3"
+            id="0"
+            name="jUGADOR"
+            order="0"
+            sx="0.3"
+            sy="0.3"
+            x="600"
+            y="620"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="5"
+            c="false"
+            group="3"
+            id="5"
+            name="Portal_Nivel"
+            order="2"
+            sx="1.0"
+            sy="1.0"
+            x="760"
+            y="600"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="7"
+            c="false"
+            group="3"
+            id="7"
+            name="NPC_Guardia"
+            order="1"
+            sx="1.0"
+            sy="1.0"
+            x="680"
+            y="600"
+            z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="9">
+            <prop id="2" list="0" val="0.0"/>
+            <prop id="3" list="0" val="false"/>
+            <prop id="4" list="0" val="false"/>
+            <prop id="5" list="0" val="false"/>
+            <prop id="6" list="0" val=""/>
+            <prop id="7" list="0" val="0.0"/>
+        </s>
+    </snippets>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>
