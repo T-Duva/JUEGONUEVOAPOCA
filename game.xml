@@ -65,7 +65,7 @@
     scaleModeAndroid="0"
     scaleModeDesktop="3"
     scaleModeIOS="0"
-    scaleModeWeb="3"
+    scaleModeWeb="4"
     simulatorOS="0.0"
     simulatorTargetOS="0.0"
     splashStyle="0"
@@ -144,7 +144,35 @@
         <scale enabled="false" name="3x"/>
         <scale enabled="false" name="4x"/>
     </androidScales>
-    <folders/>
+    <folders>
+        <group desc="" id="0" name="NPCS_L1" type="actortype">
+            <r id="9"/>
+            <r id="10"/>
+            <r id="11"/>
+            <r id="12"/>
+            <r id="13"/>
+            <r id="14"/>
+            <r id="15"/>
+            <r id="16"/>
+            <r id="17"/>
+            <r id="18"/>
+        </group>
+        <group desc="" id="1" name="NPCS_L2" type="actortype"/>
+        <group desc="" id="2" name="NPCS_L3" type="actortype"/>
+        <group desc="" id="3" name="Batalla L1" type="actortype">
+            <r id="39"/>
+            <r id="41"/>
+            <r id="43"/>
+            <r id="45"/>
+            <r id="47"/>
+            <r id="49"/>
+            <r id="51"/>
+            <r id="53"/>
+            <r id="55"/>
+            <r id="57"/>
+            <r id="59"/>
+        </group>
+    </folders>
     <packs/>
     <groups/>
     <cgroups>
@@ -157,9 +185,7 @@
         <key id="1" keyname="DOWN" name="down" vk="40" vks="40"/>
         <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
         <key id="3" keyname="RIGHT" name="right" vk="39" vks="39"/>
-        <key id="4" keyname="Z" name="action1" vk="90" vks="90"/>
-        <key id="5" keyname="X" name="action2" vk="88" vks="88"/>
-        <key id="6" keyname="ENTER" name="enter" vk="10" vks="10"/>
+        <key id="4" keyname="UNKNOWN" name="enterkey" vk="13" vks="13"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
@@ -200,7 +226,7 @@
             desc=""
             dirty="true"
             id="0"
-            members="0,2,3,4,5,7"
+            members="0,2,3,4,5,7,9,10,11,12,13,14,15,16,17,18,29,31,39,41,43,45,47,49,51,53,55,57,59"
             name="Main Atlas"
             pvr="false"
             resize="0"
@@ -210,7 +236,7 @@
             desc=""
             dirty="true"
             id="1"
-            members=""
+            members="33,35"
             name="Atlas 2"
             pvr="false"
             resize="0"
