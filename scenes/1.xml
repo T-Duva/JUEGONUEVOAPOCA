@@ -15,7 +15,7 @@
     name="L1"
     revision=""
     savecount="0"
-    tiled="1"
+    tiled="0"
     tileh="32"
     tilew="32"
     type="standard"
@@ -85,7 +85,138 @@
             x="750"
             y="555"/>
     </regions>
-    <terrainRegions/>
+    <terrainRegions>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="38"
+            id="0"
+            name="Terrain 0"
+            pts="4,0.0,0.0,0.0,38.0,16.0,38.0,16.0,0.0"
+            r="64"
+            type="box"
+            w="16"
+            x="12"
+            y="245"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="34"
+            id="1"
+            name="Terrain 1"
+            pts="4,0.0,0.0,0.0,34.0,8.0,34.0,8.0,0.0"
+            r="64"
+            type="box"
+            w="8"
+            x="416"
+            y="243"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="44"
+            id="2"
+            name="Terrain 2"
+            pts="4,0.0,0.0,0.0,44.0,20.0,44.0,20.0,0.0"
+            r="64"
+            type="box"
+            w="20"
+            x="638"
+            y="275"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="46"
+            id="3"
+            name="Terrain 3"
+            pts="4,0.0,0.0,0.0,46.0,10.0,46.0,10.0,0.0"
+            r="64"
+            type="box"
+            w="10"
+            x="154"
+            y="648"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="45"
+            id="4"
+            name="Terrain 4"
+            pts="4,0.0,0.0,0.0,45.0,20.0,45.0,20.0,0.0"
+            r="64"
+            type="box"
+            w="20"
+            x="493"
+            y="537"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="44"
+            id="5"
+            name="Terrain 5"
+            pts="4,0.0,0.0,0.0,44.0,13.0,44.0,13.0,0.0"
+            r="64"
+            type="box"
+            w="13"
+            x="26"
+            y="13"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="54"
+            id="6"
+            name="Terrain 6"
+            pts="4,0.0,0.0,0.0,54.0,13.0,54.0,13.0,0.0"
+            r="64"
+            type="box"
+            w="13"
+            x="845"
+            y="470"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="49"
+            id="7"
+            name="Terrain 7"
+            pts="4,0.0,0.0,0.0,49.0,16.0,49.0,16.0,0.0"
+            r="64"
+            type="box"
+            w="16"
+            x="1179"
+            y="542"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="46"
+            id="8"
+            name="Terrain 8"
+            pts="4,0.0,0.0,0.0,46.0,8.0,46.0,8.0,0.0"
+            r="64"
+            type="box"
+            w="8"
+            x="1245"
+            y="175"/>
+        <terrainRegion
+            b="64"
+            g="64"
+            group="1"
+            h="44"
+            id="9"
+            name="Terrain 9"
+            pts="4,0.0,0.0,0.0,44.0,10.0,44.0,10.0,0.0"
+            r="64"
+            type="box"
+            w="10"
+            x="445"
+            y="21"/>
+    </terrainRegions>
     <actors>
         <actor
             a="0.0"
@@ -110,8 +241,8 @@
             order="2"
             sx="1.0"
             sy="1.0"
-            x="760"
-            y="600"
+            x="851"
+            y="171"
             z="0"/>
         <actor
             a="0.0"
@@ -123,20 +254,141 @@
             order="1"
             sx="1.0"
             sy="1.0"
-            x="680"
-            y="600"
+            x="17"
+            y="239"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="9"
+            c="false"
+            group="3"
+            id="9"
+            name="NPC01"
+            order="3"
+            sx="0.2"
+            sy="0.2"
+            x="174"
+            y="-90"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="10"
+            c="false"
+            group="3"
+            id="10"
+            name="NPC02"
+            order="4"
+            sx="0.2"
+            sy="0.2"
+            x="291"
+            y="128"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="11"
+            c="false"
+            group="3"
+            id="11"
+            name="NPC03"
+            order="5"
+            sx="0.2"
+            sy="0.2"
+            x="360"
+            y="-91"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="12"
+            c="false"
+            group="3"
+            id="12"
+            name="NPC04"
+            order="6"
+            sx="0.2"
+            sy="0.2"
+            x="761"
+            y="149"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="13"
+            c="false"
+            group="3"
+            id="13"
+            name="NPC05"
+            order="7"
+            sx="0.2"
+            sy="0.2"
+            x="1128"
+            y="85"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="14"
+            c="false"
+            group="3"
+            id="14"
+            name="NPC06"
+            order="8"
+            sx="0.2"
+            sy="0.2"
+            x="980"
+            y="234"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="15"
+            c="false"
+            group="3"
+            id="15"
+            name="NPC07"
+            order="9"
+            sx="0.2"
+            sy="0.2"
+            x="-16"
+            y="479"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="16"
+            c="false"
+            group="3"
+            id="16"
+            name="NPC08"
+            order="10"
+            sx="0.2"
+            sy="0.2"
+            x="749"
+            y="375"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="17"
+            c="false"
+            group="3"
+            id="17"
+            name="NPC09"
+            order="12"
+            sx="0.2"
+            sy="0.2"
+            x="413"
+            y="424"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="18"
+            c="false"
+            group="3"
+            id="18"
+            name="NPC10"
+            order="11"
+            sx="0.2"
+            sy="0.2"
+            x="1044"
+            y="442"
             z="0"/>
     </actors>
-    <snippets>
-        <s enabled="true" id="9">
-            <prop id="2" list="0" val="0.0"/>
-            <prop id="3" list="0" val="false"/>
-            <prop id="4" list="0" val="false"/>
-            <prop id="5" list="0" val="false"/>
-            <prop id="6" list="0" val=""/>
-            <prop id="7" list="0" val="0.0"/>
-        </s>
-    </snippets>
+    <snippets/>
     <terrain/>
     <atlases members="" retainAtlases="true"/>
 </scene>

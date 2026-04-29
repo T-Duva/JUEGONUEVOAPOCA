@@ -65,7 +65,7 @@
     scaleModeAndroid="0"
     scaleModeDesktop="3"
     scaleModeIOS="0"
-    scaleModeWeb="4"
+    scaleModeWeb="3"
     simulatorOS="0.0"
     simulatorTargetOS="0.0"
     splashStyle="0"
@@ -161,16 +161,6 @@
         <group desc="" id="2" name="NPCS_L3" type="actortype"/>
         <group desc="" id="3" name="Batalla L1" type="actortype">
             <r id="39"/>
-            <r id="41"/>
-            <r id="43"/>
-            <r id="45"/>
-            <r id="47"/>
-            <r id="49"/>
-            <r id="51"/>
-            <r id="53"/>
-            <r id="55"/>
-            <r id="57"/>
-            <r id="59"/>
         </group>
     </folders>
     <packs/>
@@ -226,7 +216,7 @@
             desc=""
             dirty="true"
             id="0"
-            members="0,2,3,4,5,7,9,10,11,12,13,14,15,16,17,18,29,31,39,41,43,45,47,49,51,53,55,57,59"
+            members="0,2,3,4,5,7,9,10,11,12,13,14,15,16,17,18,29,31,39"
             name="Main Atlas"
             pvr="false"
             resize="0"

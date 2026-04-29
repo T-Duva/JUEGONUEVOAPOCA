@@ -1,2 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups format="1"/>
+<groups format="1">
+    <group eventID="7" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-2-2 comment="false" x="0" y="0">
+                    <int id="0" val="0"/>
+                </set-val-2-2>
+                <set-val-2-3 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-3>
+                <set-val-2-4 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-4>
+                <set-val-2-5 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-5>
+                <set-val-2-6 comment="false" x="0" y="0">
+                    <int id="0" val=""/>
+                </set-val-2-6>
+                <set-val-2-7 comment="false" x="0" y="0">
+                    <int id="0" val="0"/>
+                </set-val-2-7>
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="if(untyped Engine._fogData==null){untyped Engine._fogData=haxe.io.Bytes.alloc(3600);} try{ Input.addKeyToControl(87,&quot;up&quot;); Input.addKeyToControl(83,&quot;down&quot;); Input.addKeyToControl(65,&quot;left&quot;); Input.addKeyToControl(68,&quot;right&quot;); Input.addKeyToControl(13,&quot;enterkey&quot;); Input.addKeyToControl(16,&quot;runshift&quot;); Input.addKeyToControl(37,&quot;left&quot;); Input.addKeyToControl(38,&quot;up&quot;); Input.addKeyToControl(39,&quot;right&quot;); Input.addKeyToControl(40,&quot;down&quot;); if(untyped Engine._firedNpcs==null){untyped Engine._firedNpcs=[false,false,false,false,false,false,false,false,false,false];} var _md:Dynamic=untyped Engine._playerMedallas; if(_md!=null){_medallas=Std.parseInt(Std.string(_md));} var _dead:Array&lt;Int&gt;=untyped Engine._defeatedNpcs; if(_dead!=null){for(_did in _dead){var _da=getActor(_did);if(_da!=null){_da.disableActorDrawing();_da.moveTo(-9999,-9999);}}} var _sx:Dynamic=untyped Engine._savedPlayerX; var _sy:Dynamic=untyped Engine._savedPlayerY; if(_sx!=null&amp;&amp;_sy!=null){var _pl=getActor(0); if(_pl!=null){_pl.setLocation(cast(_sx,Float),cast(_sy,Float));} untyped Engine._savedPlayerX=null; untyped Engine._savedPlayerY=null;} var _pl2=getActor(0); if(_pl2!=null){_pl2.disableBehavior(&quot;4-Way Movement&quot;); _pl2.setAngularVelocity(0);} untyped Engine._pendingBattle=false; untyped Engine._dialogActive=false; untyped Engine._dialogText=&quot;&quot;; #if js try{untyped __js__(&quot;window.focus(); if(document &amp;&amp; document.activeElement){document.activeElement.blur();} if(document &amp;&amp; document.body){document.body.focus();}&quot;);}catch(_e:Dynamic){} #end }catch(e:Dynamic){trace(&quot;[L1LOG] init err: &quot;+e);}"/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="10" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="{ var fog:haxe.io.Bytes = untyped Engine._fogData; if(fog != null){ g.fillColor = 0x000000; for(cy in 0...45){ for(cx in 0...80){ if(fog.get(cy*80 + cx) == 0){ g.fillRect(cx*16, cy*16, 16, 16); } } } } var _dbg:Dynamic=untyped Engine._dbgDetect; if(_dbg!=null){g.fillColor=0xFF0000; g.fillRect(0,100,1280,30); g.fillColor=0xFFFFFF; g.drawString(Std.string(_dbg),2,104);} var _pam:Dynamic = untyped Engine._playerApocamons; var _apn:Int = (_pam==null) ? 0 : _pam.length; g.fillColor = 0xFFFFFF; g.fillRect(0, 0, 160, 56); g.fillColor = 0x000000; g.drawString(&quot;Apocamons=&quot;+_apn, 6, 6); g.drawString(&quot;Medallas=&quot;+_medallas, 6, 30); }"/>
+                </custom-code>
+                <if comment="false" x="0" y="0">
+                    <group eventID="10" id="-1">
+                        <set-color comment="false" x="0" y="0">
+                            <color b="255" g="255" id="0" r="255"/>
+                        </set-color>
+                        <fill-rect comment="false" x="0" y="0">
+                            <int id="0" val="10"/>
+                            <int id="1" val="64"/>
+                            <int id="2" val="1260"/>
+                            <int id="3" val="44"/>
+                        </fill-rect>
+                        <set-color comment="false" x="0" y="0">
+                            <color b="0" g="0" id="0" r="0"/>
+                        </set-color>
+                        <draw-text comment="false" x="0" y="0">
+                            <get-val-2-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="18"/>
+                            <int id="2" val="72"/>
+                        </draw-text>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-2-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="20" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="20" id="-1">
+                <set-val-2-7 comment="false" x="0" y="0">
+                    <code-short comment="false" id="0" x="0" y="0">
+                        <int id="0" val="{var nt:Float=_mensajeTimer-1; if(nt&lt;0)nt=0; var p=getActor(0); var n=getActor(7); var po=getActor(5); var fog:haxe.io.Bytes=untyped Engine._fogData; if(p!=null){var blocked:Bool=(untyped Engine._dialogActive==true)||(untyped Engine._pendingBattle==true); var kL:Bool=Input.check(&quot;left&quot;)||isKeyDown(&quot;A&quot;); var kR:Bool=Input.check(&quot;right&quot;)||isKeyDown(&quot;D&quot;); var kU:Bool=Input.check(&quot;up&quot;)||isKeyDown(&quot;W&quot;); var kD:Bool=Input.check(&quot;down&quot;)||isKeyDown(&quot;S&quot;); var sp:Float=(Input.check(&quot;runshift&quot;)||isKeyDown(&quot;SHIFT&quot;))?10:5; var vx:Float=0; var vy:Float=0; if(!blocked){if(kL&amp;&amp;!kR){vx-=sp;}else if(kR&amp;&amp;!kL){vx+=sp;} if(vx==0){if(kU&amp;&amp;!kD){vy-=sp;}else if(kD&amp;&amp;!kU){vy+=sp;}}} p.setXVelocity(vx); p.setYVelocity(vy); p.setAngularVelocity(0); if(!blocked){ if(vx&lt;0){p.setAnimation(&quot;Izquierda&quot;);} else if(vx&gt;0){p.setAnimation(&quot;Derecha&quot;);} else if(vy&lt;0){p.setAnimation(&quot;Arriba&quot;);} else if(vy&gt;0){p.setAnimation(&quot;Abajo&quot;);} }} if(p!=null&amp;&amp;fog!=null){var pcx:Int=Std.int(p.getXCenter()/16); var pcy:Int=Std.int(p.getYCenter()/16); for(cy in (pcy-2)...(pcy+2)){for(cx in (pcx-1)...(pcx+2)){if(cx&gt;=0&amp;&amp;cx&lt;80&amp;&amp;cy&gt;=0&amp;&amp;cy&lt;45){fog.set(cy*80+cx,1);}}}} var pending:Bool=(untyped Engine._pendingBattle==true); var dialog:Bool=(untyped Engine._dialogActive==true); if(dialog){nt=1; _mensajeHUD=Std.string(untyped Engine._dialogText); if(Input.pressed(&quot;enterkey&quot;)){untyped Engine._dialogActive=false; untyped Engine._pendingBattle=true; pending=true;}} if(pending){nt=1; if(Input.pressed(&quot;enterkey&quot;)){untyped Engine._playerMedallas=_medallas; if(p!=null){untyped Engine._savedPlayerX=p.getXCenter(); untyped Engine._savedPlayerY=p.getYCenter();} untyped Engine._pendingBattle=false; switchScene(5,null,null);}} if(!dialog&amp;&amp;!pending&amp;&amp;p!=null&amp;&amp;n!=null){var dxG:Float=p.getXCenter()-n.getXCenter(); var dyG:Float=p.getYCenter()-n.getYCenter(); var near:Bool=(dxG*dxG+dyG*dyG)&lt;8100; if(near&amp;&amp;!_firedNpc){_firedNpc=true; if(_medallas&gt;=10){_medallas=0; _permisoPortal=true; _mensajeHUD=&quot;GUARDIA: Toma! La necesitaras. Nos vemos del otro lado. Habilidad: CAMINAR POR AGUAS BAJAS&quot;;}else{_mensajeHUD=&quot;GUARDIA: Vuelve cuando tengas suficientes medallas!&quot;;} nt=240;}else if(!near){_firedNpc=false;}} if(!dialog&amp;&amp;!pending&amp;&amp;p!=null&amp;&amp;po!=null){var dxP:Float=p.getXCenter()-po.getXCenter(); var dyP:Float=p.getYCenter()-po.getYCenter(); var near2:Bool=(dxP*dxP+dyP*dyP)&lt;8100; if(near2){if(_permisoPortal&amp;&amp;!_firedPortal){_firedPortal=true; _mensajeHUD=&quot;En 5 segundos seras teletransportado...&quot;; nt=300; switchScene(GameModel.get().scenes.get(3).getID(),null,createCrossfadeTransition(5));}else if(!_permisoPortal&amp;&amp;!_firedPortal){_firedPortal=true; _mensajeHUD=&quot;Para pasar, necesitaras el poder unico que te dara el guardia.&quot;; nt=240;}}else{_firedPortal=false;}} var npcIds=[9,10,11,12,13,14,15,16,17,18]; var npcTypeIds=[9,10,11,12,13,14,15,16,17,18]; var texts=[&quot;NPC: EY TU! Ven aqui!&quot;,&quot;NPC: OYE! Vamos a pelear!&quot;,&quot;NPC: Shhh... los escuchas en la noche? Yo si.&quot;,&quot;NPC: No cruces el pozo del sur. Nunca.&quot;,&quot;NPC: Yo tenia familia. Ahora tengo este bidon.&quot;,&quot;NPC: Cuidado con el Guardia. No regala nada.&quot;,&quot;NPC: El aire de afuera mata lento. Respira poco.&quot;,&quot;NPC: Dicen que el Portal lleva a un lugar mejor. Mentira.&quot;,&quot;NPC: No bajes la guardia, forastero.&quot;,&quot;NPC: Aqui nadie sonrie gratis, forastero.&quot;]; var flagArr:Array&lt;Bool&gt;=untyped Engine._firedNpcs; if(flagArr==null){flagArr=[false,false,false,false,false,false,false,false,false,false]; untyped Engine._firedNpcs=flagArr;} if(!dialog&amp;&amp;!pending&amp;&amp;p!=null){for(i in 0...npcIds.length){var npc=getActor(npcIds[i]); if(npc!=null){var nx0:Float=npc.getXCenter(); var ny0:Float=npc.getYCenter(); if(nx0&lt;0||nx0&gt;1280||ny0&lt;0||ny0&gt;736){continue;} var dx:Float=p.getXCenter()-nx0; var dy:Float=p.getYCenter()-ny0; var nearN:Bool=(Math.abs(dx)&lt;=64)&amp;&amp;(dy&gt;-115)&amp;&amp;(dy&lt;-80); if(nearN&amp;&amp;!flagArr[i]){untyped Engine._dbgDetect=&quot;NPC&quot;+(i+1)+&quot; | px=&quot;+Std.int(p.getXCenter())+&quot; py=&quot;+Std.int(p.getYCenter())+&quot; | nx=&quot;+Std.int(nx0)+&quot; ny=&quot;+Std.int(ny0)+&quot; | dx=&quot;+Std.int(dx)+&quot; dy=&quot;+Std.int(dy); flagArr[i]=true; if(fog!=null){var ncx:Int=Std.int(npc.getXCenter()/16); var ncy:Int=Std.int(npc.getYCenter()/16); for(fcy in (ncy-4)...(ncy+5)){for(fcx in (ncx-4)...(ncx+5)){if(fcx&gt;=0&amp;&amp;fcx&lt;80&amp;&amp;fcy&gt;=0&amp;&amp;fcy&lt;45){fog.set(fcy*80+fcx,1);}}}} var step:Float=16; var nx:Float=npc.getX(); var ny:Float=npc.getY(); if(Math.abs(dx)&gt;=Math.abs(dy)){nx += (dx&gt;=0)?step:-step;} else {ny += (dy&gt;=0)?step:-step;} npc.moveTo(nx,ny,0.08); untyped Engine._battleEnemyAid=npcTypeIds[i]; untyped Engine._battleEnemyInstanceId=npcIds[i]; untyped Engine._dialogText=texts[i]; untyped Engine._dialogActive=true; nt=1;} else if(!nearN){flagArr[i]=false;}}}} var tk:Int=((untyped Engine._l1Tick==null)?0:cast(untyped Engine._l1Tick,Int))+1; untyped Engine._l1Tick=tk; if((tk%30)==0){trace(&quot;[L1LOG] dialog=&quot;+(untyped Engine._dialogActive==true)+&quot; pending=&quot;+(untyped Engine._pendingBattle==true)+&quot; shift=&quot;+(Input.check(&quot;runshift&quot;)||isKeyDown(&quot;SHIFT&quot;)));} nt;}"/>
+                    </code-short>
+                </set-val-2-7>
+            </group>
+        </step>
+    </group>
+</groups>

@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <snippet
-        actorid="0"
-        attachedevent="true"
-        class="scripts.ActorEvents_0"
-        classname="scripts.ActorEvents_0"
-        desc="Actor Specific Events"
-        description="Actor Specific Events"
-        design="true"
-        drawOrder="0"
-        id="0"
-        name="ActorEvents_0"
-        oid="-1"
-        package="scripts."
-        shared="false"
-        type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet
         attachedevent="true"
         class="scripts.SceneEvents_0"
         classname="scripts.SceneEvents_0"
@@ -51,8 +33,90 @@
         sceneid="1"
         shared="false"
         type="scene">
+        <number
+            default="0.0"
+            defaultValue="0.0"
+            desc=""
+            dropdown=""
+            fullname="medallas"
+            hidden="false"
+            id="2"
+            name="_medallas"
+            order="1"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="permisoPortal"
+            hidden="false"
+            id="3"
+            name="_permisoPortal"
+            order="2"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="firedNpc"
+            hidden="false"
+            id="4"
+            name="_firedNpc"
+            order="3"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="firedPortal"
+            hidden="false"
+            id="5"
+            name="_firedPortal"
+            order="4"/>
+        <text
+            default=""
+            defaultValue=""
+            desc=""
+            dropdown=""
+            fullname="mensajeHUD"
+            hidden="false"
+            id="6"
+            name="_mensajeHUD"
+            order="5"/>
+        <number
+            default="0.0"
+            defaultValue="0.0"
+            desc=""
+            dropdown=""
+            fullname="mensajeTimer"
+            hidden="false"
+            id="7"
+            name="_mensajeTimer"
+            order="6"/>
         <blocks/>
-        <events/>
+        <events>
+            <event
+                displayName="Created"
+                enabled="true"
+                id="7"
+                name="init"
+                order="1"
+                repeats="true"/>
+            <event
+                displayName="Drawing"
+                enabled="true"
+                id="10"
+                name="draw"
+                order="3"
+                repeats="true"/>
+            <event
+                displayName="Chequeo"
+                enabled="true"
+                id="20"
+                name="step"
+                order="2"
+                repeats="true"/>
+        </events>
     </snippet>
     <snippet
         attachedevent="true"
@@ -577,5 +641,296 @@
                 order="2"
                 repeats="true"/>
         </events>
+    </snippet>
+    <snippet
+        actorid="9"
+        attachedevent="true"
+        class="scripts.ActorEvents_9"
+        classname="scripts.ActorEvents_9"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="10"
+        name="ActorEvents_9"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="10"
+        attachedevent="true"
+        class="scripts.ActorEvents_10"
+        classname="scripts.ActorEvents_10"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="11"
+        name="ActorEvents_10"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="11"
+        attachedevent="true"
+        class="scripts.ActorEvents_11"
+        classname="scripts.ActorEvents_11"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="12"
+        name="ActorEvents_11"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="12"
+        attachedevent="true"
+        class="scripts.ActorEvents_12"
+        classname="scripts.ActorEvents_12"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="13"
+        name="ActorEvents_12"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="13"
+        attachedevent="true"
+        class="scripts.ActorEvents_13"
+        classname="scripts.ActorEvents_13"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="14"
+        name="ActorEvents_13"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="14"
+        attachedevent="true"
+        class="scripts.ActorEvents_14"
+        classname="scripts.ActorEvents_14"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="15"
+        name="ActorEvents_14"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="15"
+        attachedevent="true"
+        class="scripts.ActorEvents_15"
+        classname="scripts.ActorEvents_15"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="16"
+        name="ActorEvents_15"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="16"
+        attachedevent="true"
+        class="scripts.ActorEvents_16"
+        classname="scripts.ActorEvents_16"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="17"
+        name="ActorEvents_16"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="17"
+        attachedevent="true"
+        class="scripts.ActorEvents_17"
+        classname="scripts.ActorEvents_17"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="18"
+        name="ActorEvents_17"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="18"
+        attachedevent="true"
+        class="scripts.ActorEvents_18"
+        classname="scripts.ActorEvents_18"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="19"
+        name="ActorEvents_18"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="29"
+        attachedevent="true"
+        class="scripts.ActorEvents_29"
+        classname="scripts.ActorEvents_29"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="20"
+        name="ActorEvents_29"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="31"
+        attachedevent="true"
+        class="scripts.ActorEvents_31"
+        classname="scripts.ActorEvents_31"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="21"
+        name="ActorEvents_31"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        attachedevent="true"
+        class="scripts.SceneEvents_5"
+        classname="scripts.SceneEvents_5"
+        desc="Scene Specific Events"
+        description="Scene Specific Events"
+        design="true"
+        drawOrder="0"
+        id="22"
+        name="SceneEvents_5"
+        oid="-1"
+        package="scripts."
+        sceneid="5"
+        shared="false"
+        type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        attachedevent="false"
+        class="scripts.Design_23_23_LogicaBatalla"
+        classname="scripts.Design_23_23_LogicaBatalla"
+        desc=""
+        description=""
+        design="true"
+        drawOrder="0"
+        id="23"
+        name="LogicaBatalla"
+        oid="-1"
+        package="scripts"
+        shared="false"
+        type="scene">
+        <blocks/>
+        <events>
+            <event
+                displayName="Created"
+                enabled="true"
+                id="1"
+                name="init"
+                order="1"
+                repeats="true"/>
+            <event
+                displayName="Step"
+                enabled="true"
+                id="2"
+                name="step"
+                order="2"
+                repeats="true"/>
+            <event
+                displayName="Drawing"
+                enabled="true"
+                id="3"
+                name="draw"
+                order="3"
+                repeats="true"/>
+        </events>
+    </snippet>
+    <snippet
+        actorid="39"
+        attachedevent="true"
+        class="scripts.ActorEvents_39"
+        classname="scripts.ActorEvents_39"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="25"
+        name="ActorEvents_39"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
