@@ -16,7 +16,15 @@
         shared="false"
         type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event
+                displayName="SONIDO"
+                enabled="true"
+                id="3"
+                name="init"
+                order="3"
+                repeats="true"/>
+        </events>
     </snippet>
     <snippet
         attachedevent="true"
@@ -134,7 +142,15 @@
         shared="false"
         type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event
+                displayName="SONIDO"
+                enabled="true"
+                id="3"
+                name="init"
+                order="3"
+                repeats="true"/>
+        </events>
     </snippet>
     <snippet
         attachedevent="true"
@@ -161,8 +177,90 @@
             id="1"
             name="_habloConNPC"
             order="0"/>
+        <number
+            default="0.0"
+            defaultValue="0.0"
+            desc=""
+            dropdown=""
+            fullname="medallas"
+            hidden="false"
+            id="2"
+            name="_medallas"
+            order="1"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="permisoPortal"
+            hidden="false"
+            id="3"
+            name="_permisoPortal"
+            order="2"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="firedNpc"
+            hidden="false"
+            id="4"
+            name="_firedNpc"
+            order="3"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="firedPortal"
+            hidden="false"
+            id="5"
+            name="_firedPortal"
+            order="4"/>
+        <text
+            default=""
+            defaultValue=""
+            desc=""
+            dropdown=""
+            fullname="mensajeHUD"
+            hidden="false"
+            id="6"
+            name="_mensajeHUD"
+            order="5"/>
+        <number
+            default="0.0"
+            defaultValue="0.0"
+            desc=""
+            dropdown=""
+            fullname="mensajeTimer"
+            hidden="false"
+            id="7"
+            name="_mensajeTimer"
+            order="6"/>
         <blocks/>
-        <events/>
+        <events>
+            <event
+                displayName="Created"
+                enabled="true"
+                id="21"
+                name="init"
+                order="4"
+                repeats="true"/>
+            <event
+                displayName="Chequeo"
+                enabled="true"
+                id="22"
+                name="step"
+                order="5"
+                repeats="true"/>
+            <event
+                displayName="Drawing"
+                enabled="true"
+                id="23"
+                name="draw"
+                order="6"
+                repeats="true"/>
+        </events>
     </snippet>
     <snippet
         attachedevent="true"
@@ -211,6 +309,13 @@
                 id="3"
                 name="event-collide-typetotype"
                 order="3"
+                repeats="true"/>
+            <event
+                displayName="SONIDO"
+                enabled="true"
+                id="4"
+                name="init"
+                order="4"
                 repeats="true"/>
         </events>
     </snippet>
@@ -904,14 +1009,21 @@
                 enabled="true"
                 id="2"
                 name="step"
-                order="2"
+                order="3"
                 repeats="true"/>
             <event
                 displayName="Drawing"
                 enabled="true"
                 id="3"
                 name="draw"
-                order="3"
+                order="5"
+                repeats="true"/>
+            <event
+                displayName="SONIDO"
+                enabled="true"
+                id="4"
+                name="init"
+                order="6"
                 repeats="true"/>
         </events>
     </snippet>
@@ -926,6 +1038,276 @@
         drawOrder="0"
         id="25"
         name="ActorEvents_39"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="41"
+        attachedevent="true"
+        class="scripts.ActorEvents_41"
+        classname="scripts.ActorEvents_41"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="26"
+        name="ActorEvents_41"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="43"
+        attachedevent="true"
+        class="scripts.ActorEvents_43"
+        classname="scripts.ActorEvents_43"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="27"
+        name="ActorEvents_43"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="45"
+        attachedevent="true"
+        class="scripts.ActorEvents_45"
+        classname="scripts.ActorEvents_45"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="28"
+        name="ActorEvents_45"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="47"
+        attachedevent="true"
+        class="scripts.ActorEvents_47"
+        classname="scripts.ActorEvents_47"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="29"
+        name="ActorEvents_47"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="49"
+        attachedevent="true"
+        class="scripts.ActorEvents_49"
+        classname="scripts.ActorEvents_49"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="30"
+        name="ActorEvents_49"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="51"
+        attachedevent="true"
+        class="scripts.ActorEvents_51"
+        classname="scripts.ActorEvents_51"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="31"
+        name="ActorEvents_51"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="53"
+        attachedevent="true"
+        class="scripts.ActorEvents_53"
+        classname="scripts.ActorEvents_53"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="32"
+        name="ActorEvents_53"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="55"
+        attachedevent="true"
+        class="scripts.ActorEvents_55"
+        classname="scripts.ActorEvents_55"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="33"
+        name="ActorEvents_55"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="57"
+        attachedevent="true"
+        class="scripts.ActorEvents_57"
+        classname="scripts.ActorEvents_57"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="34"
+        name="ActorEvents_57"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="75"
+        attachedevent="true"
+        class="scripts.ActorEvents_75"
+        classname="scripts.ActorEvents_75"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="35"
+        name="ActorEvents_75"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="77"
+        attachedevent="true"
+        class="scripts.ActorEvents_77"
+        classname="scripts.ActorEvents_77"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="36"
+        name="ActorEvents_77"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="79"
+        attachedevent="true"
+        class="scripts.ActorEvents_79"
+        classname="scripts.ActorEvents_79"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="37"
+        name="ActorEvents_79"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="81"
+        attachedevent="true"
+        class="scripts.ActorEvents_81"
+        classname="scripts.ActorEvents_81"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="38"
+        name="ActorEvents_81"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="83"
+        attachedevent="true"
+        class="scripts.ActorEvents_83"
+        classname="scripts.ActorEvents_83"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="39"
+        name="ActorEvents_83"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="85"
+        attachedevent="true"
+        class="scripts.ActorEvents_85"
+        classname="scripts.ActorEvents_85"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="40"
+        name="ActorEvents_85"
         oid="-1"
         package="scripts."
         shared="false"

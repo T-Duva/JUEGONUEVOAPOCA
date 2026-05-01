@@ -22,7 +22,7 @@
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <camera-follow comment="false" x="0" y="0">
-                    <ACTOR eid="2" id="0"/>
+                    <ACTOR eid="0" id="0"/>
                 </camera-follow>
             </group>
         </init>
@@ -54,5 +54,18 @@
             <actortype eid="0" id="0"/>
             <actortype eid="5" id="1"/>
         </event-collide-typetotype>
+    </group>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-volume comment="false" x="0" y="0">
+                    <int id="0" val="5"/>
+                </set-volume>
+                <play-sound4 comment="false" x="0" y="0">
+                    <int id="0" val="0"/>
+                    <sound eid="71" id="1"/>
+                </play-sound4>
+            </group>
+        </init>
     </group>
 </groups>

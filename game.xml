@@ -34,7 +34,7 @@
     cws-version="1.0"
     defaultFramerate="60"
     defaultProjectScale="1x"
-    defaultSceneID="1"
+    defaultSceneID="0"
     desc=""
     desktopScale="1.5x"
     disableBackButton="false"
@@ -157,7 +157,14 @@
             <r id="17"/>
             <r id="18"/>
         </group>
-        <group desc="" id="1" name="NPCS_L2" type="actortype"/>
+        <group desc="" id="1" name="NPCS_L2" type="actortype">
+            <r id="75"/>
+            <r id="77"/>
+            <r id="79"/>
+            <r id="81"/>
+            <r id="83"/>
+            <r id="85"/>
+        </group>
         <group desc="" id="2" name="NPCS_L3" type="actortype"/>
         <group desc="" id="3" name="Batalla L1" type="actortype">
             <r id="39"/>
@@ -216,7 +223,7 @@
             desc=""
             dirty="true"
             id="0"
-            members="0,2,3,4,5,7,9,10,11,12,13,14,15,16,17,18,29,31,39"
+            members="0,2,3,4,5,7,9,10,11,12,13,14,15,16,17,18,29,31,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,70,71,72,73,74,75,77,79,81,83,85"
             name="Main Atlas"
             pvr="false"
             resize="0"
