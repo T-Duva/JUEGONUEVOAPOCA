@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-volume comment="false" x="0" y="0">
+                    <int id="0" val="5"/>
+                </set-volume>
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="untyped Engine._m0Start=true; untyped Engine._m0Sel=false; untyped Engine._m0Prev=Input.numTouches; untyped Engine._m0Tap=-999.0; untyped Engine._m0SelImg=null; stopAllSounds(); var _m74=getSound(74); if(_m74!=null){loopSound(_m74);}"/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="10" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="if(untyped Engine._m0Sel==true){ var _img:openfl.display.BitmapData=cast(untyped Engine._m0SelImg,openfl.display.BitmapData); if(_img==null){ try{ if(openfl.utils.Assets.exists(&quot;assets/graphics/1x/background-90-0.png&quot;)){ _img=openfl.utils.Assets.getBitmapData(&quot;assets/graphics/1x/background-90-0.png&quot;,false); untyped Engine._m0SelImg=_img; } }catch(_e:Dynamic){} } if(_img!=null){ g.drawImage(_img,0,0); } g.fillColor=Utils.convertColor(Utils.getColorRGB(120,0,0)); g.fillRoundRect(460,610,360,80,10); g.fillColor=Utils.convertColor(Utils.getColorRGB(255,230,230)); g.drawString(&quot;CONFIRMAR&quot;,575,640); }"/>
+                </custom-code>
+            </group>
+        </draw>
+    </group>
+    <group eventID="20" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="20" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="{ var nt:Int=Input.numTouches; var edge:Bool=(nt&gt;0 &amp;&amp; (untyped Engine._m0Prev==null || Std.parseInt(Std.string(untyped Engine._m0Prev))&lt;=0)); untyped Engine._m0Prev=nt; var touched:Bool=Input.mousePressed || edge; if(!touched){0;} else { var now:Float=haxe.Timer.stamp(); var last:Float=(untyped Engine._m0Tap==null)?-999.0:cast(untyped Engine._m0Tap,Float); if(now-last&lt;0.12){0;} else { untyped Engine._m0Tap=now; var mx:Float=(Input.mouseX+Engine.cameraX)/Engine.SCALE; var my:Float=(Input.mouseY+Engine.cameraY)/Engine.SCALE; var onCom:Bool=false; for(i in 0...32){ var r:Region=engine.getRegion(i); if(r!=null &amp;&amp; r.isMouseOver()){ onCom=true; break; } } var onConf:Bool=(mx&gt;=460 &amp;&amp; mx&lt;=820 &amp;&amp; my&gt;=610 &amp;&amp; my&lt;=690); if(onCom){ untyped Engine._m0Sel=true; } else if(untyped Engine._m0Sel==true &amp;&amp; onConf){ switchScene(GameModel.get().scenes.get(1).getID(), null, createCrossfadeTransition(3)); } } } 0; }"/>
+                </custom-code>
+            </group>
+        </step>
+    </group>
+</groups>
